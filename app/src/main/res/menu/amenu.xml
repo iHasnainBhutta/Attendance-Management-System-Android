@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+
+        <item android:id="@+id/adhome"
+            android:title="@string/ahome"
+            android:icon="@drawable/home_icon"
+            />
+
+        <item android:id="@+id/adfacultylist"
+            android:title="@string/afaculty_list"
+            android:icon="@drawable/attendance"
+            />
+        <item android:id="@+id/adstudentlist"
+            android:title="@string/astudent_list"
+            android:icon="@drawable/add_course"
+            />
+        <item android:id="@+id/admangeaccount"
+            android:title="@string/amanage_accounts"
+            android:icon="@drawable/resultmenu"
+            />
+
+    </group>
+
+
+    <item
+        android:title="@string/aadmin">
+
+        <menu>
+            <group android:checkableBehavior="single">
+                <item android:id="@+id/adlogin"
+                    android:title="@string/adlogin"
+                    android:icon="@drawable/login2"
+                    />
+                <item android:id="@+id/adprofile"
+                    android:title="@string/aprofile"
+                    android:icon="@drawable/home_icon"
+                    />
+                <item android:id="@+id/adLogout"
+                    android:title="@string/alogout"
+                    android:icon="@drawable/login_icon"
+                    />
+            </group>
+        </menu>
+    </item>
+
+
+
+
+    <item android:title="@string/acommunicate">
+        <menu>
+            <item android:id="@+id/nav_share"
+                android:title="@string/ashare"
+                android:icon="@drawable/share"
+                />
+            <item android:id="@+id/nav_rateus"
+                android:title="@string/arate_us"
+                android:icon="@drawable/rateus"
+                />
+        </menu>
+    </item>
+</menu>

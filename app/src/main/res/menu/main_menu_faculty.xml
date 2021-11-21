@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+
+        <item android:id="@+id/fdhome"
+            android:title="Home"
+            android:icon="@drawable/home_icon"
+            />
+
+        <item android:id="@+id/fdstudent"
+            android:title="Student List"
+            android:icon="@drawable/attendance"
+            />
+        <item android:id="@+id/fdAttendance"
+            android:title="Attendance List"
+            android:icon="@drawable/add_course"
+            />
+        <item android:id="@+id/fdlecure"
+            android:title="Lecture Schedule"
+            android:icon="@drawable/resultmenu"
+            />
+
+    </group>
+
+
+    <item
+        android:title="Faculty Profile">
+
+        <menu>
+            <group android:checkableBehavior="single">
+                <item android:id="@+id/fdlogin"
+                    android:title="Login"
+                    android:icon="@drawable/login2"
+                    />
+                <item android:id="@+id/fdprofile"
+                    android:title="Profile"
+                    android:icon="@drawable/home_icon"
+                    />
+                <item android:id="@+id/fdLogout"
+                    android:title="Logout"
+                    android:icon="@drawable/login_icon"
+                    />
+            </group>
+        </menu>
+    </item>
+
+
+
+
+    <item android:title="Communicate">
+        <menu>
+            <item android:id="@+id/nav_share"
+                android:title="Share"
+                android:icon="@drawable/share"
+                />
+            <item android:id="@+id/nav_rateus"
+                android:title="Rate us"
+                android:icon="@drawable/rateus"
+                />
+        </menu>
+    </item>
+</menu>

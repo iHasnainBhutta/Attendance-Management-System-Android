@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background2"
+    tools:context=".studentRegister">
+
+
+<!--************* Custom Layout *************-->
+ <!--   <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/background2"
+        android:layout_marginLeft="0dp" />-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+     android:layout_alignParentBottom="true"
+
+        android:layout_marginTop="150dp"
+        android:layout_centerHorizontal="true"
+
+        android:background="@drawable/whiteful"
+        />
+    <!--End-->
+
+
+    <!--************* Create Account TextHeading *************-->
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/ac"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="63dp"
+        android:text="@string/ca"
+        android:textColor="#000"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:fontFamily="@font/convergence"
+        android:layout_marginLeft="20dp" />
+    <!--End-->
+
+    <!--************* Please Fill TextHeading *************-->
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/texts"
+        android:layout_below="@+id/ac"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:fontFamily="sans-serif-light"
+        android:text="@string/txt"
+        android:textColor="#AD000000"
+        android:textSize="25sp"
+        android:layout_marginLeft="20dp" />
+    <!--End-->
+
+    <!--************* Registration TextHeading *************-->
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/regtext"
+        android:layout_below="@+id/texts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="sans-serif-light"
+        android:layout_marginTop="40dp"
+        android:textStyle="bold"
+        android:text="@string/sr"
+        android:textColor="#F3000000"
+        android:textSize="22sp" />
+    <!--End-->
+
+
+    <!--************* Name EditText *************-->
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/srname"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/degreelevel"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="35dp"
+        android:background="@drawable/border"
+        android:hint="@string/entername"
+        android:inputType="text"
+        android:padding="15.0dip"
+        android:textColor="@color/black"
+        android:textColorHint="#7C000000"
+        android:textSize="18.0sp"
+        tools:visibility="visible" />
+    <!--End-->
+
+    <!--************* RollNo EditText *************-->
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/srrolno"
+        android:layout_below="@id/srname"
+        android:inputType="text"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginEnd="35dp"
+        android:background="@drawable/border"
+        android:hint="@string/enterrollno"
+        android:textColorHint="#7C000000"
+        android:textColor="@color/black"
+        android:padding="15.0dip"
+        android:textSize="18.0sp" />
+    <!--End-->
+
+
+    <!--************* Email EditText *************-->
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/sremail"
+        android:inputType="textEmailAddress"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/srrolno"
+        android:layout_marginStart="35dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginTop="22dip"
+        android:background="@drawable/border"
+        android:hint="@string/enteremail"
+        android:padding="15.0dip"
+        android:textColor="@color/black"
+        android:textSize="18.0sp"
+        android:textColorHint="#7C000000"/>
+    <!--End-->
+
+    <!--************* Hint Roll no Text *************-->
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/hint"
+        android:layout_below="@id/srrolno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:fontFamily="sans-serif-light"
+        android:text="@string/ierolno"
+        android:textColor="#85000000"
+        android:textSize="12sp"
+        android:layout_marginLeft="60dp" />
+    <!--End-->
+
+    <!--************* Password EditText *************-->
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/srpassword"
+        android:inputType="numberPassword"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sremail"
+        android:layout_marginStart="35dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginTop="22dip"
+        android:background="@drawable/border"
+        android:hint="@string/rpassword"
+        android:padding="15.0dip"
+        android:textColor="@color/black"
+        android:textSize="18.0sp"
+        android:textColorHint="#7C000000"/>
+    <!--End-->
+
+    <!--************* Department Spinner *************-->
+    <androidx.appcompat.widget.AppCompatSpinner
+        android:id="@+id/deptspin"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_marginEnd="130dp"
+        android:layout_below="@+id/regtext"
+        android:layout_centerHorizontal="true"
+        android:popupBackground="@drawable/popup"
+        android:layout_marginTop="18dp"
+        android:background="@drawable/style_spinner"
+        android:layout_marginRight="100dp" />
+    <!--End-->
+
+    <!--************* Degree Spinner *************-->
+    <androidx.appcompat.widget.AppCompatSpinner
+    android:id="@+id/degreelevel"
+    android:layout_width="170dp"
+    android:layout_height="60dp"
+    android:layout_marginEnd="100dp"
+    android:layout_below="@+id/deptspin"
+    android:layout_marginStart="43dp"
+    android:popupBackground="@drawable/popup"
+    android:layout_marginTop="1dp"
+    android:background="@drawable/style_spinner"
+    android:layout_marginRight="100dp"
+    android:layout_marginLeft="45dp" />
+    <!--End-->
+
+  <!--
+        <NumberPicker
+        android:id="@+id/yearpicker"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+
+        android:layout_below="@id/regtext"
+        android:layout_marginStart="220dp"
+        android:layout_marginLeft="220dp"
+        android:background="@color/custom_blue"
+        />-->
+
+
+    <!--************* Session Spinner *************-->
+    <androidx.appcompat.widget.AppCompatSpinner
+        android:id="@+id/sessionspin"
+        android:layout_width="153dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="169dp"
+        android:layout_marginEnd="10dp"
+        android:layout_alignLeft="@id/degreelevel"
+        android:popupBackground="@drawable/popup"
+        android:layout_below="@id/deptspin"
+        android:background="@drawable/style_spinner"
+        android:layout_marginTop="1dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="85dp"
+        android:layout_alignStart="@id/degreelevel" />
+    <!--End-->
+
+    <!--************* Section Spinner *************-->
+    <androidx.appcompat.widget.AppCompatSpinner
+        android:id="@+id/sectionspin"
+        android:layout_width="155dp"
+        android:layout_height="53dp"
+        android:popupBackground="@drawable/popup"
+        android:layout_marginTop="22dp"
+        android:layout_marginLeft="172dp"
+        android:layout_alignLeft="@id/srrolno"
+        android:layout_below="@id/srname"
+        android:layout_marginStart="175dp"
+        android:layout_marginEnd="10dp"
+        android:layout_alignStart="@id/srrolno"
+        android:background="@drawable/style_spinner"
+        android:layout_marginRight="53dp" />
+    <!--End-->
+
+    <!--************* Gender Radio Group *************-->
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/gender"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/srpassword"
+        android:orientation="horizontal"
+        android:layout_alignStart="@id/gender"
+        android:layout_marginStart="100dp">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/male"
+            android:text="@string/male"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:buttonTint="@color/custom_blue"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/female"
+            android:text="@string/female"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:layout_marginLeft="15dp"
+            android:buttonTint="@color/custom_blue"
+            android:layout_marginStart="15dp" />
+
+    </RadioGroup>
+    <!--End-->
+
+    <!--************* Gender TextHeading *************-->
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/srpassword"
+        android:text="@string/gender"
+        android:textColor="#000000"
+        android:layout_marginTop="15dp"
+        android:textSize="18sp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginStart="50dp" />
+    <!--End-->
+
+
+    <!--************* Registration Button *************-->
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/sregister"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/teacherbackground"
+        android:text="@string/rregister"
+        android:layout_below="@id/gender"
+        android:textColor="#000000"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="5dp"/>
+    <!--End-->
+
+</RelativeLayout>

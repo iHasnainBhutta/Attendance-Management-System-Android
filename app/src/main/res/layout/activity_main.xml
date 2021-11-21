@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity"
+    tools:visibility="visible">
+
+
+    <!--****** Custom Layout ******-->
+    <!--End-->
+
+    <RelativeLayout
+        android:id="@+id/d1"
+        android:layout_width="270dp"
+        android:layout_height="270dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/backgroundcurve" />
+
+
+    <!--****** Attendance Management System HeadingText ******-->
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="63dp"
+        android:text="Attendance\nManagement\nSystem"
+        android:textColor="#000"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:fontFamily="@font/convergence" />
+    <!--End-->
+
+    <!--****** Welcome Heading ******-->
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/ams"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:fontFamily="sans-serif-light"
+        android:text="@string/welcome"
+        android:textColor="#000000"
+        android:textSize="45sp" />
+    <!--End-->
+
+    <!--****** Getting Started by logging TextHeading ******-->
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/texts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ams"
+        android:layout_centerInParent="true"
+        android:fontFamily="sans-serif-light"
+        android:text="@string/getting_started_by_logging"
+        android:textColor="#AD000000"
+        android:textSize="25sp" />
+    <!--End-->
+
+    <!--****** into your account ******-->
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/texts"
+        android:layout_centerInParent="true"
+        android:fontFamily="sans-serif-light"
+        android:text="@string/into_your_account"
+        android:textColor="#AD000000"
+        android:textSize="25sp" />
+    <!--End-->
+
+    <!--****** Faculty Button ******-->
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/wcfacultybtn"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/texts"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/teacherbackground"
+        android:text="@string/wfaculty"
+        android:textColor="#000000" />
+    <!--End-->
+
+    <!--****** Student Button ******-->
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/wcstudentbtn"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/wcfacultybtn"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/teacherbackground"
+        android:text="@string/wstudent"
+        android:textColor="#000000" />
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/adminlg"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+       android:layout_toEndOf="@+id/d1"
+        android:layout_marginStart="40dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="10dp"
+        android:background="#00FFFFFF"
+        android:text="Admin"
+        android:textColor="#000000"
+        android:layout_toRightOf="@+id/d1"
+        android:layout_marginLeft="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp" />
+    <!--End-->
+
+</RelativeLayout>

@@ -1,0 +1,77 @@
+<resources>
+    <string name="app_name">Ali_Hasnain_2K18_BSCS_116</string>
+    <string name="ca">Create Account</string>
+    <string name="txt">Please fill the input below here</string>
+    <string name="sr">Student Registration</string>
+    <string name="entername">Enter your name</string>
+    <string name="enterrollno">Roll no#</string>
+    <string name="enteremail">Email</string>
+    <string name="ierolno">i.e 2K18_BSCS_116</string>
+    <string name="rpassword">Password</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="gender">Gender</string>
+    <string name="rregister">Register</string>
+    <string name="student_login">Student Login</string>
+    <string name="please_sign_in_to_continue">Please sign in to continue</string>
+    <string name="forgot_password">Forgot password?</string>
+    <string name="llogin">Login</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="password">Password</string>
+    <string name="i_e_2k18_bscs_116">i.e 2K18_BSCS_116</string>
+    <string name="roll_no">Roll no#</string>
+    <string name="faculty_login">Faculty Login</string>
+    <string name="fplease_sign_in_to_continue">Please sign in to continue</string>
+    <string name="fforgot_password">Forgot password?</string>
+    <string name="flogin">Login</string>
+    <string name="floginbtn">Login</string>
+    <string name="femail">Email</string>
+    <string name="fpassword">Password</string>
+    <string name="spassword">Password</string>
+    <string name="fregister">Register</string>
+    <string name="welcome">Welcome!</string>
+    <string name="getting_started_by_logging">Getting started by logging</string>
+    <string name="into_your_account">into your account</string>
+    <string name="wfaculty">Faculty</string>
+    <string name="wstudent">Student</string>
+    <string name="navi_drawer_open">Open Navigation Drawer</string>
+    <string name="navi_drawer_close">Close Navigation Drawer</string>
+    <string name="welcomefaculty">Welcome</string>
+    <string name="my_dashboardfaculty">My Dashboard</string>
+    <string name="upload_result">Upload Result</string>
+    <string name="logout_faculty">Logout</string>
+    <string name="admin_login">Admin Login</string>
+    <string name="aprofile">Profile</string>
+    <string name="alogout">Logout</string>
+    <string name="ahome">Home</string>
+    <string name="afaculty_list">Faculty List</string>
+    <string name="astudent_list">Student List</string>
+    <string name="amanage_accounts">Manage Accounts</string>
+    <string name="aadmin">Admin</string>
+    <string name="adlogin">Login</string>
+    <string name="acommunicate">Communicate</string>
+    <string name="ashare">Share</string>
+    <string name="arate_us">Rate us</string>
+    <string-array name="dept">
+        <item>one</item>
+        <item>two</item>
+    </string-array>
+
+    <string-array name="departmentlist">
+        <item>Select Department</item>
+        <item>Dept. of Computing</item>
+        <item>Dept. of Civil Engg</item>
+        <item>Dept. of Electrical Engg</item>
+        <item>Dept. of Mechanical Engg</item>
+        <item>Dept. of Chemical Engg</item>
+        <item>Dept. of Petroleum Engg</item>
+        <item>Dept. of Environ. Engg</item>
+        <item>Dept. of BioTechnology</item>
+        <item>Dept. of Energy Sys Engg</item>
+        <item>Dept. of Architecture Engg</item>
+        <item>Dept. of Business Administration</item>
+
+
+    </string-array>
+</resources>

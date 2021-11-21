@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".splashscreen">
+
+    <!--***** App Logo *****-->
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/slogo"
+        android:layout_width="161dp"
+        android:layout_height="152dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/aicon" />
+    <!--End-->
+
+    <!--***** App Name Heading *****-->
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/amstxt"
+        android:layout_below="@id/slogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="200dp"
+        android:text="BY"
+        android:textColor="#000"
+        android:textSize="20sp"
+      />
+    <!--End-->
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/amstxt2"
+        android:layout_below="@id/amstxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="8dp"
+        android:text="H A S N A I N"
+        android:textColor="#035281"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

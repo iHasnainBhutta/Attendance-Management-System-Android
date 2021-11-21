@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".studentHome"
+    android:background="@drawable/background2"
+    android:fitsSystemWindows="true"
+    android:id="@+id/drawer_layout">
+
+
+
+<!--Screen Layout-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--White background shape-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="148dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/whiteful"
+            > </RelativeLayout>
+        <!--End-->
+
+
+        <!--************* Create Account TextHeading *************-->
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/wcs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="60dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="50dp"
+            android:text="Welcome"
+            android:textColor="#000"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:visibility="visible"
+            app:fontFamily="serif" />
+        <!--End-->
+
+        <!--Login user TextView-->
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/husername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/wcs"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:textColor="#000"
+            android:textSize="22sp"
+            app:fontFamily="@font/convergence"
+            />
+        <!--End-->
+
+        <!--Dashboard TextView-->
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/dashboard"
+            android:layout_below="@+id/husername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="20dp"
+            android:fontFamily="sans-serif-light"
+            android:text="My Dashboard"
+            android:textColor="#AD000000"
+            android:textSize="20sp"
+            android:layout_marginStart="20dp"
+            android:textStyle="bold"/>
+        <!--End-->
+
+<!--For CardView Designing-->
+<ScrollView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:layout_below="@id/dashboard">
+
+        <GridLayout
+            android:id="@+id/grid_layout"
+            android:layout_marginTop="15dp"
+            android:layout_below="@id/dashboard"
+            android:columnCount="2"
+            android:rowCount="3"
+            android:alignmentMode="alignMargins"
+            android:columnOrderPreserved="false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!--MyAttendance CardView-->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/checkattendance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:cardElevation="6dp"
+                app:cardCornerRadius="12dp"
+                android:layout_margin="12dp"
+                >
+
+                <LinearLayout
+                    android:background="@color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    android:gravity="center"
+                    android:id="@+id/myattendance"
+                    >
+
+                    <ImageView
+                        android:src="@drawable/caimg"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:id="@+id/cardai"/>
+
+                    <TextView
+                        android:id="@+id/cardat"
+                        android:layout_marginTop="12dp"
+                        android:textColor="#000000"
+                        android:textSize="18sp"
+                        android:text="My Attendance"
+                        android:layout_width= "wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <!--AddCourse CardView-->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/addcourse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:cardElevation="6dp"
+                app:cardCornerRadius="12dp"
+                android:layout_margin="12dp"
+                >
+
+                <LinearLayout
+                    android:background="@color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    android:gravity="center"
+                    >
+
+                    <ImageView
+                        android:src="@drawable/addcoursee"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:id="@+id/addcourseimg"/>
+
+                    <TextView
+                        android:id="@+id/addcoursetxt"
+                        android:layout_marginTop="12dp"
+                        android:textColor="#000000"
+                        android:textSize="18sp"
+                        android:text="Add Courses  "
+                        android:layout_width= "wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <!--Result CardView-->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/resultc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:cardElevation="6dp"
+                app:cardCornerRadius="12dp"
+                android:layout_margin="12dp"
+                >
+
+                <LinearLayout
+                    android:background="@color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    android:gravity="center"
+                    >
+
+                    <ImageView
+                        android:src="@drawable/result"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:id="@+id/resultcimg"
+                        />
+
+                    <TextView
+                        android:id="@+id/resultctxt"
+                        android:layout_marginTop="12dp"
+                        android:textColor="#000000"
+                        android:textSize="18sp"
+                        android:text="Result"
+                        android:layout_width= "wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <!--Leave CardView-->
+            <androidx.cardview.widget.CardView
+            android:id="@+id/sickleavecard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            app:cardElevation="6dp"
+            app:cardCornerRadius="12dp"
+            android:layout_margin="12dp"
+            >
+
+            <LinearLayout
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:gravity="center"
+                >
+
+                <ImageView
+                    android:src="@drawable/sl"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:id="@+id/sickleaveimg"/>
+
+                <TextView
+                    android:id="@+id/sickleavetxt"
+                    android:layout_marginTop="12dp"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:text="Sick Leave"
+                    android:layout_width= "wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+            <!--Update Profile CardView-->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/updateprofilecard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:cardElevation="6dp"
+                app:cardCornerRadius="12dp"
+                android:layout_margin="12dp"
+                >
+
+                <LinearLayout
+                    android:background="@color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    android:gravity="center"
+                    >
+
+                    <ImageView
+                        android:src="@drawable/updatehome"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:id="@+id/updateprofileimg"/>
+
+                    <TextView
+                        android:id="@+id/updateprofiletxt"
+                        android:layout_marginTop="12dp"
+                        android:textColor="#000000"
+                        android:textSize="18sp"
+                        android:text="Update Profile"
+                        android:layout_width= "wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <!--End-->
+
+            <!--Logout CardView-->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/slogoutcard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:cardElevation="6dp"
+                app:cardCornerRadius="12dp"
+                android:layout_margin="12dp"
+                >
+
+                <LinearLayout
+                    android:background="@color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    android:gravity="center"
+                    android:id="@+id/slogout"
+                    >
+
+                    <ImageView
+                        android:src="@drawable/logout"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:id="@+id/logoutimg"/>
+
+                    <TextView
+                        android:id="@+id/logouttxt"
+                        android:layout_marginTop="12dp"
+                        android:textColor="#000000"
+                        android:textSize="18sp"
+                        android:text="Logout"
+                        android:layout_width= "wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <!--End-->
+
+        </GridLayout>
+</ScrollView>
+        <!--Designing End for CardViews-->
+
+        <!--Toolbar-->
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar"/>
+        <!--End-->
+
+
+    </RelativeLayout>
+    <!--Screen Layout End-->
+
+
+
+    <!--Navigation View-->
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/nav_view"
+        android:layout_gravity="start"
+        android:clipToPadding="false"
+        app:headerLayout="@layout/header"
+        app:menu="@menu/main_manu"
+        />
+    <!--end-->
+
+
+</androidx.drawerlayout.widget.DrawerLayout>
